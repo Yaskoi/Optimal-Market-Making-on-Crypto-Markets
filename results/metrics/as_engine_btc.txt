@@ -1,0 +1,105 @@
+Loading data...
+IS  : 13,219,200 candles  (153 sessions)
+OOS : 2,678,399 candles  (31 sessions)
+
+=== CALIBRATION (In-Sample) ===
+[calibrate] IS candles    : 13,219,200
+[calibrate] Median price  : 112,552.47
+[calibrate] Spread        : 0.01 bps  (0.1000 $)
+[calibrate] κ             : 2251049.3701
+[calibrate] A             : 0.090609 fills/sec
+[calibrate] γ             : 0.01
+[calibrate] Fill prob     : 0.500 at half-spread
+
+=== BACKTESTS ===
+
+══════════════════════════════════════════════════════
+  IS  — no frictions
+══════════════════════════════════════════════════════
+  Sessions          : 153
+  Trades            : 567582
+  Trades/session    : 3709.7
+  Total P&L         : $+4898.27
+  Mean P&L/session  : $+32.0149
+  Annualised Sharpe : 2.648
+  Max drawdown      : $-2015.6284
+  Win rate          : 56.9%
+  Residual inv. avg : 6.03
+
+══════════════════════════════════════════════════════
+  IS  — with frictions
+══════════════════════════════════════════════════════
+  Sessions          : 153
+  Trades            : 567582
+  Trades/session    : 3709.7
+  Total P&L         : $-2670.75
+  Mean P&L/session  : $-17.4559
+  Annualised Sharpe : -1.435
+  Max drawdown      : $-3992.3789
+  Win rate          : 42.5%
+  Residual inv. avg : 6.03
+  ── Frictions/session ──
+  Commission        : $7.4194
+  Slippage          : $44.5563
+  Adverse selection : $41.9812
+  Total             : $93.9570
+
+══════════════════════════════════════════════════════
+  OOS — no frictions
+══════════════════════════════════════════════════════
+  Sessions          : 31
+  Trades            : 101131
+  Trades/session    : 3262.3
+  Total P&L         : $+905.84
+  Mean P&L/session  : $+29.2205
+  Annualised Sharpe : 4.031
+  Max drawdown      : $-676.3089
+  Win rate          : 64.5%
+  Residual inv. avg : 4.87
+
+══════════════════════════════════════════════════════
+  OOS — with frictions
+══════════════════════════════════════════════════════
+  Sessions          : 31
+  Trades            : 101131
+  Trades/session    : 3262.3
+  Total P&L         : $-428.02
+  Mean P&L/session  : $-13.8071
+  Annualised Sharpe : -1.852
+  Max drawdown      : $-1129.2249
+  Win rate          : 51.6%
+  Residual inv. avg : 4.87
+  ── Frictions/session ──
+  Commission        : $6.5246
+  Slippage          : $36.1467
+  Adverse selection : $36.4989
+  Total             : $79.1702
+[export] 567,582 trades → results/as_engine/btc_is_trades_as.csv
+[export] Period      : 2025-07-01 → 2025-11-30
+[export] Sessions    : 153 days with trades
+[export] Trades/day  : 3709.7 on average
+[export] Columns     : ['date', 'timestamp', 'side', 'decision_price', 'fill_price', 'slippage_$', 'commission_$', 'adv_sel_$', 'total_friction_$', 'inventory_after', 'mid', 'bid', 'ask', 'spread_$', 'spread_bps', 'sigma_t', 't_rem_min', 'fut_ret_$', 'session_pnl', 'session_n_trades', 'session_final_inv']
+[export] 101,131 trades → results/as_engine/btc_oos_trades_as.csv
+[export] Period      : 2025-12-01 → 2025-12-31
+[export] Sessions    : 31 days with trades
+[export] Trades/day  : 3262.3 on average
+[export] Columns     : ['date', 'timestamp', 'side', 'decision_price', 'fill_price', 'slippage_$', 'commission_$', 'adv_sel_$', 'total_friction_$', 'inventory_after', 'mid', 'bid', 'ask', 'spread_$', 'spread_bps', 'sigma_t', 't_rem_min', 'fut_ret_$', 'session_pnl', 'session_n_trades', 'session_final_inv']
+
+════════════════════════════════════════════════════════════════════════
+Metric                         IS no-fric    IS fric OOS no-fric   OOS fric
+────────────────────────────────────────────────────────────────────────
+Total P&L ($)                    4898.274  -2670.747     905.836   -428.021
+Mean P&L/session ($)               32.015    -17.456      29.221    -13.807
+Annualised Sharpe                   2.648     -1.435       4.031     -1.852
+Win rate (%)                       56.863     42.484      64.516     51.613
+Max drawdown ($)                -2015.628  -3992.379    -676.309  -1129.225
+Frictions/session ($)               0.000     93.957       0.000     79.170
+
+=== OOS FRICTION BREAKDOWN ===
+  Commission    $    6.52  (  8.2%)
+  Slippage      $   36.15  ( 45.7%)
+  Adverse sel.  $   36.50  ( 46.1%)
+  TOTAL         $   79.17
+  Gross P&L/session  $   29.22
+  Net P&L/session    $  -13.81
+  Friction impact    $   43.03 (147.3%)

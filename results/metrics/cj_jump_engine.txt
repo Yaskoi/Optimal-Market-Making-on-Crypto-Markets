@@ -83,16 +83,6 @@ OOS : 2,678,399 candles  (31 sessions)
   Slippage          : $33.2404
   Adverse selection : $27.9526
   Total             : $67.2461
-[export] 494,153 trades → results/logs_trades/cj_OU_jumps_engine/btc_is_trades_cj_jumps.csv
-[export] Period      : 2025-07-01 → 2025-11-30
-[export] Sessions    : 153 days with trades
-[export] Trades/day  : 3229.8 on average
-[export] Columns     : ['date', 'timestamp', 'side', 'decision_price', 'fill_price', 'slippage_$', 'commission_$', 'adv_sel_$', 'total_friction_$', 'inventory_after', 'mid', 'bid', 'ask', 'spread_$', 'spread_bps', 'sigma_t', 't_rem_min', 'fut_ret_$', 'session_pnl', 'session_n_trades', 'session_final_inv']
-[export] 93,824 trades → results/logs_trades/cj_OU_jumps_engine/btc_oos_trades_cj_jumps.csv
-[export] Period      : 2025-12-01 → 2025-12-31
-[export] Sessions    : 31 days with trades
-[export] Trades/day  : 3026.6 on average
-[export] Columns     : ['date', 'timestamp', 'side', 'decision_price', 'fill_price', 'slippage_$', 'commission_$', 'adv_sel_$', 'total_friction_$', 'inventory_after', 'mid', 'bid', 'ask', 'spread_$', 'spread_bps', 'sigma_t', 't_rem_min', 'fut_ret_$', 'session_pnl', 'session_n_trades', 'session_final_inv']
 
 ════════════════════════════════════════════════════════════════════════
 Metric                         IS no-fric    IS fric OOS no-fric   OOS fric

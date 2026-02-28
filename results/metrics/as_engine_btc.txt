@@ -74,16 +74,6 @@ OOS : 2,678,399 candles  (31 sessions)
   Slippage          : $36.1467
   Adverse selection : $36.4989
   Total             : $79.1702
-[export] 567,582 trades → results/as_engine/btc_is_trades_as.csv
-[export] Period      : 2025-07-01 → 2025-11-30
-[export] Sessions    : 153 days with trades
-[export] Trades/day  : 3709.7 on average
-[export] Columns     : ['date', 'timestamp', 'side', 'decision_price', 'fill_price', 'slippage_$', 'commission_$', 'adv_sel_$', 'total_friction_$', 'inventory_after', 'mid', 'bid', 'ask', 'spread_$', 'spread_bps', 'sigma_t', 't_rem_min', 'fut_ret_$', 'session_pnl', 'session_n_trades', 'session_final_inv']
-[export] 101,131 trades → results/as_engine/btc_oos_trades_as.csv
-[export] Period      : 2025-12-01 → 2025-12-31
-[export] Sessions    : 31 days with trades
-[export] Trades/day  : 3262.3 on average
-[export] Columns     : ['date', 'timestamp', 'side', 'decision_price', 'fill_price', 'slippage_$', 'commission_$', 'adv_sel_$', 'total_friction_$', 'inventory_after', 'mid', 'bid', 'ask', 'spread_$', 'spread_bps', 'sigma_t', 't_rem_min', 'fut_ret_$', 'session_pnl', 'session_n_trades', 'session_final_inv']
 
 ════════════════════════════════════════════════════════════════════════
 Metric                         IS no-fric    IS fric OOS no-fric   OOS fric
@@ -102,4 +92,5 @@ Frictions/session ($)               0.000     93.957       0.000     79.170
   TOTAL         $   79.17
   Gross P&L/session  $   29.22
   Net P&L/session    $  -13.81
+
   Friction impact    $   43.03 (147.3%)

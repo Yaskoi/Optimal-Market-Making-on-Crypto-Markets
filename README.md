@@ -106,8 +106,7 @@ Three components of realistic transaction costs are modelled explicitly:
 │   ├── plots/
 │   └── trade_logs/
 │
-├── data.zip                    # not tracked (Parquet files)
-├── requirements.txt
+├── Report.pdf     # coming soon, I'm a little bit lazy right now
 └── README.md
 ```
 

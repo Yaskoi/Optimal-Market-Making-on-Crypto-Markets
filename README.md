@@ -113,8 +113,8 @@ Three components of realistic transaction costs are modelled explicitly:
 ---
 ## Data
 
-* BTC/USDT 1-second OHLCV candles sourced from the [Binance Data Portal](https://data.binance.vision/).
-* ETH/USDT 1-second OHLCV candles sourced from the [Binance Data Portal](https://data.binance.vision/).
+* BTC/USDT 1-second OHLCV candles sourced from the [Binance Data Portal]([https://data.binance.vision/](https://data.binance.vision/?prefix=data/spot/monthly/klines/BTCUSDT/1s)).
+* ETH/USDT 1-second OHLCV candles sourced from the [Binance Data Portal]([https://data.binance.vision/](https://data.binance.vision/?prefix=data/spot/monthly/klines/ETHUSDT/1s)).
 
 Each candle includes a pre-computed **Order Flow Imbalance** column:
 

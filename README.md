@@ -34,11 +34,15 @@ where $\nu = 0$ at the intraday horizon, and $\alpha_t$ is the stochastic drift 
 
 ### Optimal quotes — Guéant, Lehalle & Fernandez-Tapia (2013)
 
-$$r(t,q) = S_t + \frac{\alpha_t}{\rho}\left(1 - e^{-\rho(T-t)}\right) - q\gamma\sigma^2(T-t)$$
-
-$$\psi^*(t) = \gamma\sigma^2(T-t) + \frac{2}{\gamma}\ln\left(1 + \frac{\gamma}{\kappa}\right)$$
-
-$$b^* = r - \frac{\psi^*}{2}, \quad a^* = r + \frac{\psi^*}{2}$$
+```math
+r(t,q) = S_t + \frac{\alpha_t}{\rho}\left(1 - e^{-\rho(T-t)}\right) - q\gamma\sigma^2(T-t)
+```
+```math
+\psi^*(t) = \gamma\sigma^2(T-t) + \frac{2}{\gamma}\ln\left(1 + \frac{\gamma}{\kappa}\right)
+```
+```math
+b^* = r - \frac{\psi^*}{2}, \quad a^* = r + \frac{\psi^*}{2}
+```
 
 ### Alpha signal models
 

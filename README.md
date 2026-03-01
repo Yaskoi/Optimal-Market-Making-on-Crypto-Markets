@@ -50,7 +50,7 @@ b^* = r - \frac{\psi^*}{2}, \quad a^* = r + \frac{\psi^*}{2}
 $$\hat{\alpha}_t = \text{EWMA}(\text{OFI}_t, \text{span}^*)$$
 
 **Model 3 — OU + Jumps (Cartea-Jaimungal §10.4.2):**
-$$d\alpha_t = -\zeta\\alpha_t,\dt + \eta,\dW_t^\alpha + \xi^+,\dM^+_t - \xi^-,\dM^-_t$$
+$$d\alpha_t = -\zeta\,\alpha_t\,dt + \eta\,dW_t^\alpha + \xi^+\,dM^+_t - \xi^-\,dM^-_t$$
 
 where $M^\pm$ are Poisson processes counting buy/sell market orders and $\xi^\pm \sim \text{Exp}(\bar{\xi}^\pm)$.
 
